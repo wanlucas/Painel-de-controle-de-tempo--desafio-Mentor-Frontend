@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&family=Rubik:wght@300;400;500&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+body {
+    color: white;
+    Font-size: 18px;
+    user-select: none;
+    background: radial-gradient(hsl(246, 62%, 13%),  hsl(246, 71%, 57%) 200%);
+    overflow: hidden;
+}
+
+.menu {
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    height: 95%;
+    padding: 100px;
+    background: hsl(226, 43%, 10%);
+    box-shadow: 0 10px 10px 2px black;
+    border-radius: 10px;
+}
+img, nav, ul, html, body {
+    width: 100%;
+    height: 100%;
+}
+li {
+    list-style: none;
+}
+button {
+    border: none;
+    background: none;
+}
+button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+p, span { 
+    font-size: 1.5rem;
+    color: #c1c5ed;
+}
+.main-box {
+    width: 23%;
+    border-radius: 20px;
+    background: hsl(235, 46%, 20%);
+}
+.main-box .perfil {
+    padding: 10%;
+    height: 70%;
+    border-radius: 20px;
+    background: hsl(246, 71%, 57%);
+}
+.perfil .user-image {
+    border: 4px solid #ebebeb;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+.perfil .user-image:hover {
+    transition:  0.4s;
+    transform: scale(1.5);
+}
+.perfil .user-name {
+    color: #e6e6e6;
+    font-size: 2.5rem;
+    margin: 10% 0;
+}
+.perfil .user-name span {
+    font-size: 1.5rem;
+}
+.main-box .period {
+    height: 30%;
+}
+.main-box .period ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main-box .period li {
+    padding: 0 10%;
+}
+.main-box .period li p:hover {
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+.active p{
+    transition: 0.2s;
+    color: #e4e4e4;
+    animation: select 0.2s linear;
+}
+@keyframes select {
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.menu-tasks {
+    display: grid;
+    width: 75%;
+    height: 100%;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 40px;
+}
+.task-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.task-box-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.task-box-header button {
+    height: 0.5rem;   
+}
+.add-newTask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ebebeb;
+    height: 100%;
+    font-size: 10rem;
+    text-shadow: 1px 2px black;
+}
+.options-box {
+    position: absolute;
+    visibility: hidden;
+    font-size: 1.6rem;
+    border-radius: 20px 0 20px 20px;
+    z-index: 20;
+    right: 10%;
+    top: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    width: 8rem;
+    height: 3rem;
+    border: 2px #00000082 solid;
+    box-shadow: 0 4px 6px 0 #000000;
+}
+.options-box ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.options-box li {
+    color: #000000cf;
+    font-weight: 500;
+    padding: 8px 6px;
+}
+.options-box li:hover {
+    color: rgb(65, 60, 125);
+}
+.task-box:nth-child(1) {
+    background: hsl(15, 100%, 70%);
+}
+.task-box:nth-child(2) {
+    background: hsl(195, 74%, 62%);
+}
+.task-box:nth-child(3) {
+    background: hsl(348, 100%, 68%);
+}
+.task-box:nth-child(4) {
+    background: hsl(145, 58%, 55%);
+}
+.task-box:nth-child(5) {
+    background: hsl(264, 64%, 52%);
+}
+.task-box:nth-child(6) {
+    background: hsl(43, 84%, 65%);
+}
+.task-box-hat {
+    position: relative;
+    height: 20%;
+}
+.task-box-hat img {
+    position: absolute;
+    object-fit: cover;
+    right: 10%;
+    width: 40%;
+}
+.task-box-content {
+    padding: 10%;
+    height: 85%;
+    border-radius: 15px;
+    background: hsl(235, 46%, 20%);
+}
+.task-box-content:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    background: hsl(236, 46%, 25%);
+}
+.task-box-info h3 {
+    padding-top: 4%;
+    font-size:5rem;
+}
+@keyframes changePeriod {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.attribution {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vh;  
+}
+.attribution p{
+    margin: 0 2%;
+}
+.attribution a{
+    text-decoration: none;
+    color:  hsl(246, 64%, 77%);
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+
+@media only screen and (max-width: 1700px) {
+    .menu {
+        width: 100%;
+        height: 100%;
+    }
+    .main-box {
+        width: 35%;
+    }
+    .perfil .user-name {
+        margin: 0;
+        font-size: 1.7rem;
+    }
+    .menu-tasks {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .attribution p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .menu {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-box .perfil {
+        display: flex;
+        align-items: center;
+        height: 70%;
+        padding: 0 3%;  
+    }
+    .perfil .user-image {
+        width: auto;
+        height: 70%;
+    }
+    .main-box .period ul {
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+    .main-box .period ul li, .task-box-content .task-box-info > * {
+        padding: 0;
+        margin: 0;
+    }
+    .main-box {
+        height: 35vh;
+    }
+    .main-box, .menu-tasks {
+        margin: 1% 0;
+        width: 96%;
+    }
+    .task-box {
+        border-radius: 12px;
+        width: 100%;
+    }
+    .perfil .user-name {
+        margin: 0 5% ;
+    }
+    .task-box-content {
+       border-radius: 8px;
+       padding: 5% 5%;
+    }
+    .task-box-content .task-box-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .perfil .user-name,  .task-box-info p {
+        font-size: 1.0rem;
+    }
+    .task-box-info h3{
+        font-size: 2.4rem;
+    }
+    .attribution p {
+        font-size: 0.7rem;
+    }
+    .task-box .task-box-header , .perfil .user-name span{
+        font-size: 0.9rem;
+    }
+}
