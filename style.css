@@ -25,9 +25,9 @@ body {
     display: flex;
     width: 85%;
     height: 90%;
-    padding: 100px;
+    padding: 50px;
     background: hsl(226, 43%, 10%);
-    box-shadow: 0 10px 10px 2px black;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 img, nav, ul, html, body {
@@ -46,8 +46,8 @@ button:hover {
     filter: brightness(1.2);
 }
 p, span { 
-    font-size: 0.8rem;
-    color: #c1c5ed;
+    font-size: 0.9rem;
+    color: #d8dbf7;
 }
 .main-box {
     width: 23%;
@@ -55,7 +55,7 @@ p, span {
     background: hsl(235, 46%, 20%);
 }
 .main-box .perfil {
-    padding: 10%;
+    padding: 15%;
     height: 70%;
     border-radius: 15px;
     background: hsl(246, 71%, 57%);
@@ -71,7 +71,8 @@ p, span {
     transform: scale(1.5);
 }
 .perfil .user-name {
-    color: #e6e6e6;
+    color: #ebeaea;
+    font-size: 1.6rem;
     margin: 10% 0;
 }
 .perfil .user-name span {
@@ -126,23 +127,11 @@ p, span {
     display: flex;
     position: relative;
     justify-content: space-between;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    color: white;
 }
 .task-box-header button {
     height: 0.3rem;   
-}
-.options-box ul {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-}
-.options-box li {
-    color: #000000cf;
-    font-weight: 500;
-    padding: 8px 6px;
-}
-.options-box li:hover {
-    color: rgb(65, 60, 125);
 }
 .task-box:nth-child(1) {
     background: hsl(15, 100%, 70%);
@@ -181,7 +170,7 @@ p, span {
 .task-box-content:hover {
     transition: 0.4s;
     cursor: pointer;
-    background: hsl(236, 44%, 34%);
+    background: hsl(235, 48%, 28%);
 }
 .task-box-info h3 {
     padding-top: 10%;
@@ -250,7 +239,8 @@ footer {
     } 
 }
 
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 900px) {
     .menu {
         padding: 0;
         flex-direction: column;
