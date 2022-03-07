@@ -10,12 +10,7 @@ function updateTBoxes() {
               <div class="task-box-header">
               <h2>${obj.title}</h2>
               <button class="more-options"><img src="images/icon-ellipsis.svg"></button>
-              <div class=options-box>
-                  <ul> 
-                     <li id="remove"> Remove </li>
-                  </ul>
-              </div>
-          </div>
+         </div>
               <div class="task-box-info">
                   <h3 class="total-hours">${obj.timeframes.daily.current}hrs</h3>
                   <p> Yesterday - ${obj.timeframes.daily.previous}hrs</p>
@@ -51,20 +46,3 @@ periodHtml.forEach(html => {
         html.classList += 'active';
     });
 });
-tasksHtml.querySelectorAll('.task-box-header').forEach(html => {
-    html.querySelector('button').addEventListener("click", ()=> {
-        const item = html.querySelector('.options-box').style;;
-        if(item.visibility != 'visible') {
-            tasksHtml.querySelectorAll('.options-box').forEach(it => it.style.visibility = 'hidden');
-            item.visibility = 'visible';
-        }
-        else item.visibility = 'hidden';
-   });
-})
-tasksHtml.querySelectorAll('.task-box').forEach(html => {
-    html.querySelector("#remove").addEventListener("click", ()=> {
-        html.innerHTML = '<button class ="add-newTask" onclick="msg()">+</button>';
-    });
-})
-
-function msg() {alert('developing')};
