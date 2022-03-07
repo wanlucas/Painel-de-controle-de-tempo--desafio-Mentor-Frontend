@@ -24,7 +24,8 @@ body {
     margin: auto;
     display: flex;
     width: 85%;
-    height: 90%;
+    height: 85%;
+    max-height: 700px;
     padding: 50px;
     background: hsl(226, 43%, 10%);
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
@@ -173,8 +174,8 @@ p, span {
     background: hsl(235, 48%, 28%);
 }
 .task-box-info h3 {
-    padding-top: 10%;
-    font-size:2.7rem;
+    padding: 10% 0 3% 0;
+    font-size:2.9rem;
 }
 @keyframes changePeriod {
     0% {
