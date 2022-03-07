@@ -132,6 +132,9 @@ p, span {
     position: relative;
     justify-content: space-between;
     font-size: 0.8rem;
+}
+.task-box-header h2 {
+    font-weight: 400;
     color: white;
 }
 .task-box-header button {
@@ -177,8 +180,8 @@ p, span {
     background: hsl(235, 48%, 28%);
 }
 .task-box-info h3 {
-    padding: 12% 0 3% 0;
-    font-size:3rem;
+    padding: 8% 0 3% 0;
+    font-size:3.6rem;
 }
 @keyframes changePeriod {
     0% {
