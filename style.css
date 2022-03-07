@@ -56,15 +56,15 @@ p, span {
     background: hsl(235, 46%, 20%);
 }
 .main-box .perfil {
-    padding: 15%;
+    padding: 12%;
     height: 70%;
     border-radius: 15px;
     background: hsl(246, 71%, 57%);
 }
 .perfil .user-image {
-    border: 2px solid #ebebeb;
-    width: 60px;
-    height: 60px;
+    border: 2px solid white;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 .perfil .user-image:hover {
@@ -90,6 +90,9 @@ p, span {
 }
 .main-box .period li {
     padding: 0 10%;
+}
+.main-box .period li p {
+    font-size: 1rem;
 }
 .main-box .period li p:hover {
     transition: 0.5s;
@@ -132,7 +135,7 @@ p, span {
     color: white;
 }
 .task-box-header button {
-    height: 0.3rem;   
+    height: 0.25rem;   
 }
 .task-box:nth-child(1) {
     background: hsl(15, 100%, 70%);
