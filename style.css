@@ -14,7 +14,6 @@ body {
     background: radial-gradient(hsl(246, 62%, 13%),  hsl(246, 71%, 57%) 200%);
     overflow: hidden;
 }
-
 .menu {
     position: absolute;
     left: 0; 
@@ -23,10 +22,11 @@ body {
     bottom: 0;
     margin: auto;
     display: flex;
+    justify-content: space-around;
     width: 85%;
     height: 85%;
-    max-height: 600px;
     padding: 50px;
+    max-height: 600px;
     background: hsl(226, 43%, 10%);
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -44,7 +44,7 @@ button {
 }
 button:hover {
     cursor: pointer;
-    filter: brightness(1.2);
+    filter: brightness(1.4);
 }
 p, span { 
     font-size: 0.9rem;
@@ -86,13 +86,13 @@ p, span {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 4% 0;
+    padding: 8% 0;
 }
 .main-box .period li {
     padding: 0 10%;
 }
 .main-box .period li p {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .main-box .period li p:hover {
     transition: 0.5s;
@@ -117,10 +117,10 @@ p, span {
     display: grid;
     width: 75%;
     height: 100%;
-    grid-gap: 5%;
+    grid-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 0 3.6%;
+    margin-left: 25px;
 }
 .task-box {
     display: flex;
@@ -138,7 +138,7 @@ p, span {
     color: white;
 }
 .task-box-header button {
-    height: 0.25rem;   
+    height: 0.28rem;   
 }
 .task-box:nth-child(1) {
     background: hsl(15, 100%, 70%);
@@ -177,7 +177,7 @@ p, span {
 .task-box-content:hover {
     transition: 0.4s;
     cursor: pointer;
-    background: hsl(235, 48%, 28%);
+    background: hsl(235, 47%, 25%);
 }
 .task-box-info h3 {
     padding: 8% 0 3% 0;
@@ -207,15 +207,18 @@ footer {
 }
 .attribution p{
     margin: 0 2%;
+    color: white;
 }
 .attribution a{
     text-decoration: none;
-    color:  hsl(246, 64%, 77%);
+    color:  hsl(215, 90%, 80%);
+}
+.attribution a:hover {
+    color:  hsl(215, 100%, 72%);
 }
 ::-webkit-scrollbar {
     width: 0;
 }
-
 @media only screen and (max-width: 1200px) {
     .menu {
         width: 100%;
@@ -246,10 +249,10 @@ footer {
     } 
 }
 
-
 @media only screen and (max-width: 900px) {
     .menu {
         padding: 0;
+        max-height: none;
         flex-direction: column;
         align-items: center;
     }
@@ -301,7 +304,7 @@ footer {
         font-size: 2.4rem;
     }
     .attribution p {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .task-box .task-box-header , .perfil .user-name span{
         font-size: 0.9rem;
