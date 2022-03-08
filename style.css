@@ -211,10 +211,10 @@ footer {
 }
 .attribution a{
     text-decoration: none;
-    color:  hsl(215, 90%, 80%);
+    color:  hsl(179, 100%, 77%);
 }
 .attribution a:hover {
-    color:  hsl(215, 100%, 72%);
+    color:  hsl(215, 100%, 83%);
 }
 ::-webkit-scrollbar {
     width: 0;
