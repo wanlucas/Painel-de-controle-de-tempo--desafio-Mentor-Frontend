@@ -5,11 +5,11 @@ function updateTBoxes() {
     data.forEach(obj => {
         tasksHtml.innerHTML+= `
       <div class="task-box">
-         <div class="task-box-hat"><img src="${obj.link}"></div>
+         <div class="task-box-hat"><img src="${obj.link}" alt="${obj.title}"></div>
          <div class="task-box-content">
               <div class="task-box-header">
               <h2>${obj.title}</h2>
-              <button class="more-options"><img src="images/icon-ellipsis.svg"></button>
+              <button class="more-options" aria-label="options"><img src="images/icon-ellipsis.svg" alt="ellipsis"></button>
          </div>
               <div class="task-box-info">
                   <h3 class="total-hours">${obj.timeframes.daily.current}hrs</h3>
